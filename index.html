@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clodus</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./javascript/script.js" defer></script>
   </head>
   <body>
     <h1>Clodus Dashboard</h1>
+
     <div class="container">
+      <!-- 
+          This <div> element with class "container" wraps the main content of the dashboard.
+          Inside, there are two main sections:
+          - "weather-input": contains elements for entering city name or using current location.
+          - "weather-data": displays current weather and a five-day forecast.
+      -->
+
       <div class="weather-input">
+        <!-- 
+            This <div> with class "weather-input" contains elements for entering a city name or using current location.
+            The <h3> element provides a label "Enter a city Name".
+            The <input> element allows users to enter a city name, with placeholder text for guidance.
+            The <button> element with class "search-btn" initiates a manual search for weather data based on the entered city name.
+            The <div> with class "seperator" visually separates the input options.
+            The <button> element with class "location-btn" allows users to use their current location for weather data.
+        -->
+
         <h3>Enter a city Name</h3>
         <input
           type="text"
@@ -23,8 +40,21 @@
         <div class="seperator"></div>
         <button class="location-btn">use current location</button>
       </div>
+
       <div class="weather-data">
+        <!-- 
+            This <div> with class "weather-data" displays weather data, including current weather and a five-day forecast.
+            Inside, there are two main sections:
+            - "current-weather": displays current weather details.
+            - "days-forecast": displays a five-day forecast.
+        -->
+
         <div class="current-weather">
+          <!-- 
+              This <div> with class "current-weather" displays current weather details.
+              Inside, there's a placeholder for current weather details including city name, temperature, wind speed, and humidity.
+          -->
+
           <div class="details">
             <h2>_______(_______)</h2>
             <h6>Temperature:__°C</h6>
@@ -34,6 +64,13 @@
         </div>
 
         <div class="days-forecast">
+          <!-- 
+              This <div> with class "days-forecast" displays a five-day forecast.
+              Inside, there's an <h2> element with the text "5-Day Forecast" to indicate the forecast period.
+              The <ul> element with class "weather-cards" contains placeholders for forecast cards, each representing a day's weather.
+              Each <li> element with class "card" represents a forecast card, containing placeholders for temperature, wind speed, and humidity.
+          -->
+
           <h2>5- Day Forecast</h2>
           <ul class="weather-cards">
             <li class="card">
@@ -43,13 +80,13 @@
               <h6>Humidity:___%</h6>
             </li>
 
+            <!-- Additional <li> elements represent forecast cards for subsequent days, each with similar placeholders for weather details. -->
             <li class="card">
               <h3>( _____ )</h3>
               <h6>Temp: __°C</h6>
               <h6>Wind: __M/S</h6>
               <h6>Humidity:___%</h6>
             </li>
-            \
 
             <li class="card">
               <h3>( _____ )</h3>
